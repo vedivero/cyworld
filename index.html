@@ -3,16 +3,13 @@
    <head>
       <title>사이좋은 사람들, 싸이월드</title>
       <link href="./styles/index.css" rel="stylesheet" />
-      <script
-         src="https://kit.fontawesome.com/9c9d34d133.js"
-         crossorigin="anonymous"
-      ></script>
-      <!-- <link
+      <link
          rel="stylesheet"
          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
          crossorigin="anonymous"
-      /> -->
+      />
+      <script src="./index.js"></script>
    </head>
    <body>
       <div class="background">
@@ -33,19 +30,19 @@
                      </div>
                      <div class="left__body__profile">
                         <div class="profile__detail">
-                           <i class="fa-regular fa-user"></i>
+                           <i class="fas fa-file-signature"></i>
                            name
                         </div>
                         <div class="profile__detail">
-                           <i class="fa-solid fa-phone"></i>
+                           <i class="fas fa-phone"></i>
                            phone
                         </div>
                         <div class="profile__detail">
-                           <i class="fa-solid fa-envelope"></i>
-                           e-mail
+                           <i class="fas fa-envelope-square"></i>
+                           mail
                         </div>
                         <div class="profile__detail">
-                           <i class="fa-solid fa-star"></i>
+                           <i class="fas fa-images"></i>
                            instagram
                         </div>
                      </div>
@@ -73,7 +70,33 @@
                      </div>
                   </div>
                   <div class="wrapper__right__body">
-                     <iframe src="game.html"></iframe>
+                     <iframe
+                        id="contentFrame"
+                        src="home.html"
+                     ></iframe>
+                  </div>
+               </div>
+               <div class="navigation">
+                  <div
+                     class="navigation__item"
+                     id="menuHome"
+                     onclick="menuHome()"
+                  >
+                     홈
+                  </div>
+                  <div
+                     class="navigation__item"
+                     id="menuGame"
+                     onclick="menuGame()"
+                  >
+                     게임
+                  </div>
+                  <div
+                     class="navigation__item"
+                     id="menuJukebox"
+                     onclick="menuJukebox()"
+                  >
+                     쥬크박스
                   </div>
                </div>
             </div>
